@@ -1,0 +1,1 @@
+MakeSound lib was developed by Sprenger120 and is available at https://autoit.de/index.php/Thread/26610-MakeSound-eine-Alternative-zu-Beep-Melodien-mit-Dateiausgabe/
