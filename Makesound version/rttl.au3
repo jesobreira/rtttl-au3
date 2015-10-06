@@ -9,7 +9,7 @@
 			https://en.wikipedia.org/wiki/Ring_Tone_Transfer_Language
 			http://www.mobilefish.com/services/midi_maker/midi_maker.php
 			http://merwin.bespin.org/t4a/specs/nokia_rtttl.txt
-			http://www.phy.mtu.edu/~suits/notefreqs.html
+			http://www.phy.mtu.edu/~suits/NoteFreqCalcs.html
 #ce
 
 
@@ -131,6 +131,8 @@ Func __RTTL_Play($sKey, $iOctave, $fDuration, $iBeat)
 			EndIf
 		Next
 		$halfsteps -= 45 ; "tuning" (45 = a3 index on $steps)
+
+		; Formula: fn = f0 * (a)^n
 		$freq = 440*(2^(1/12))^$halfsteps
 	Else
 		$freq = 0
